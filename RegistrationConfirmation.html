@@ -8,6 +8,8 @@
 	<title> Registration Confirmation </title>
 </HEAD>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <STYLE>
 
 body{
@@ -17,17 +19,19 @@ body{
 
 .emailContainer{
 
-	max-width: 75%;
-	margin-right: 25%;
-	margin-left: 25%;
+	max-width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
 	background-color: #b5b1b1;
+	border-radius: 30px 30px 30px 30px;
 }
 
 .logoRibbon{
 	height: 75px;
-	width: 100%;
+	max-width: 100%;
 	background-color: pink;
 	padding-top: 5px;
+	border-radius: 30px 30px 0 0;
 	}
 	
 #headLogo{
@@ -39,56 +43,64 @@ body{
 	
 .header{
 		text-align: center;
-		height: 60px;
-		width:"100%";
-		/*background-color: blue;*/
+		height: auto;
+		width:100%;
 		padding: 2px 0 0 2px;
-		margin: 5px 5px 5px 5px;
+		margin: auto;
 	}
 	
 #mainImage{
 	display: block;
+	max-width: 90%;
+	height: auto;
 	margin: auto;
 }
 
 .message{
 		/*background-color: red;*/
 		
-		margin: 5px 5px 5px 5px;
+		margin: auto;
 		padding: 0 30px 0 30px;
+		height: auto;
 	}
 	
 .cta{
-		height: 180px;
+		height: auto;
 		width: 100%;
-		
+		display: inline-block;
+		background-color: red;
 	}	
 	
 .ctaBox{
-		height: 160px;
 		width: 200px;
+		height: 145px;
 		background-color: white;
-		margin: 10px;
-		float: right;
+		border-radius: 5px;
+		margin: 1% 4% 1% 4%;
+		padding: 1px 1px 1px 1px;
+		float: left;
 	}
 	
 #ctaimg{
-		height: 120px;
-		width: 200px;
+		max-width: 95%;
 		display: block;
 		margin: auto;
+		margin-top: 1%;
 		}
 
 #ctabutton{
-		margin: 10px 0 0 20px;
+		margin: auto;
+		margin-top: 5%;
+		display: block;
+		font-size: 80%;
+		border-radius: 5px 5px 5px 5px;
 	}		
 .footer{
 		font-size: 12px;
-		color: grey;
-		text-decoration: none;
 		text-align: center;
 		background-color: pink;
 		padding: 2px 2px 2px 2px;
+		border-radius: 0 0 15px 15px;
 
 		}
 		
@@ -98,12 +110,21 @@ body{
 	}
 	
 #social{
-	height: 25px;
 	width: 25px;
 	float: left;
-	padding: 5px;
+	padding: 6px;
 	display: block;
+	margin: auto;
+	
 	}
+	
+.mailbody(
+	display: inline-block;
+	height: auto;
+
+}
+	
+	
 </STYLE>
 
 <BODY>
@@ -114,62 +135,69 @@ body{
 			<a href="https://www.powergummies.com" target="_blank"><img src="assets/logoPG.png" id="headLogo"></a>
 			
 		</div>
-		
-		
-		<div class="header">
-			<h1 font-family="Arial"> Welcome to the Power Gummies Family! </h1>
-			
-		</div>
-		
-		<div class="mainImage">
-			<img id="mainImage" src="assets/sample.png" margin-left="75px" height="300px">
-		</div>
-		
-		<div class="message">
-			<p>
-				Hey, you!
-				<br>
-				You've activated your customer account.
-				<br>
-				We hear, you are as haircare obsessed as we are- so you are going to LOVE being a part of the POWER GUMMIES FAMILY.
-				<br>
-				Next time you plan to shop with us, log in for faster checkout.
-				<br>
-				<br>
-				If you have any questions, reply to this email or contact us at <a href="mailto:hello@powergummies.com"> hello@powergummies.com </a>
-			</p>
-		</div>
-		
-		<div class="cta">
-			<div class="ctaBox">
-				<a href="https://facebook.com/groups/powergummies" target="_blank"> <img id="ctaimg" src="assets/ctacom.png"> </a>
-				<button type="button" id="ctabutton" onclick="window.open('https://facebook.com/groups/powergummies');">Join our Community</button>
-			</div>
-			
-			<div class="ctaBox">
-				<a href="https://www.youtube.com/channel/UCngofkQHcngy8FuWr7jM99Q" target="_blank"> <img id="ctaimg" src="assets/ctayt.png"> </a>
-				<button type="button" id="ctabutton" onclick="window.open('https://www.youtube.com/channel/UCngofkQHcngy8FuWr7jM99Q');">Subscribe us on Youtube</button>
-			</div>		
+				
+	<div class="mailBody">	
+				<div class="header">
+					<h1 font-family="Arial" style="font-size:2.8vw;"> Welcome to the Power Gummies Family! </h1>
+					
+				</div>
+				
+				<div class="mainImage">
+					<img id="mainImage" src="assets/sample.png" margin-left="75px" height="300px">
+				</div>
+				
+				<div class="message" style="font-size:1.5vw;">
+					<p>
+						Hey, you!
+						<br>
+						You've activated your customer account.
+						<br>
+						We hear, you are as haircare obsessed as we are- so you are going to LOVE being a part of the POWER GUMMIES FAMILY.
+						<br>
+						Next time you plan to shop with us, log in for faster checkout.
+						<br>
+						<br>
+						If you have any questions, reply to this email or contact us at <a href="mailto:hello@powergummies.com"> hello@powergummies.com </a>
+					</p>
+				</div>
+				
+				<div class="cta">
+					<div class="ctaBox">
+						<a href="https://facebook.com/groups/powergummies" target="_blank"> <img id="ctaimg" src="assets/ctacom.png"> </a>
+						<button type="button" id="ctabutton" onclick="window.open('https://facebook.com/groups/powergummies');">Join our Community</button>
+					</div>
+					
+					<div class="ctaBox">
+						<a href="https://www.youtube.com/channel/UCngofkQHcngy8FuWr7jM99Q" target="_blank"> <img id="ctaimg" src="assets/ctayt.png"> </a>
+						<button type="button" id="ctabutton" onclick="window.open('https://www.youtube.com/channel/UCngofkQHcngy8FuWr7jM99Q');">Subscribe us on Youtube</button>
+					</div>		
 
-			<div class="ctaBox">
-				<a href="https://powergummies.com" target="_blank"> <img id="ctaimg" src="assets/ctafb.png"> </a>
-				<button type="button" id="ctabutton" onclick="window.open('https://powergummies.com');" >Join our Facebook Group</button>
-			</div>
-			
-		</div>
+					<div class="ctaBox">
+						<a href="https://powergummies.com" target="_blank"> <img id="ctaimg" src="assets/ctafb.png"> </a>
+						<button type="button" id="ctabutton" onclick="window.open('https://powergummies.com');" >Join our Facebook Group</button>
+					</div>
+					
+				</div>
+	</div>
 		
 		<div class="footer">
-			<a href="https://www.powergummies.com"> Power Gummies </a>
+			<a href="https://www.powergummies.com" style="text-decoration:none; color: black; font-size: 1vw;"><b> POWER GUMMIES </b></a>
+			<br>
+			M-31, Basement, M-Block Market, Greater Kailash-II,
+			<br>New Delhi-110048
+			<br> <a href="https://www.powergummies.com" style="text-decoration:none; color: black;">www.powergummies.com </a><br>
+			<a href="tel:+919999147733" style="text-decoration:none; color: black;">+91-9999147733</a> | <a href="mailto:hello@powergummies.com" style="text-decoration:none; color: black;">hello@powergummies.com</a>
 			<div class="socialIcons">
 				<a href="https://instagram.com/power_gummies" target="_blank"> <img id="social" src="assets/insta.png"> </a>
 				<a href="https://facebook.com/powergummies" target="_blank"> <img id="social" src="assets/fb.png"> </a>
 				<a href="https://twitter.com/powergummies" target="_blank"> <img id="social" src="assets/twitter.png"> </a>
 				<a href="https://snapchat.com/add/power_gummies" target="_blank"> <img id="social" src="assets/snapchat.png"> </a>
 			</div>
-			<p>
+			<p style="color: grey;">
 				This message was sent to customer@mail.com <br>
 				To Unsubscribe, Please <a href="https://www.powergummies.com" target="_blank"> click here </a> <br>
 				2020, Aesthetic Nutrition Pvt Ltd. All rights reserved. <a href="https://www.powergummies.com/privacy"> Legal </a> | <a href="https://www.powergummies.com"> Privacy </a>
+			</p>
 			
 		</div>
 	</div>
