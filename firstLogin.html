@@ -5,76 +5,79 @@
 <HTML>
 
 <HEAD> 
-	<title> First Time Login </title>
+	<title> First Login </title>
 </HEAD>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <STYLE>
 
 body{
 	font-family: sans-serif;
-	background-color: #a8f6f7;
+	background: -webkit-linear-gradient(#a4f6fc, #fca4f4);
 	}
 
 .emailContainer{
 
-	max-width: 75%;
-	margin-right: 25%;
-	margin-left: 25%;
-	background-color: #b5b1b1;
+	max-width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+	background: linear-gradient(down, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 25%, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0.3) 100%);
+	background: -o-linear-gradient(90deg, rgba(355, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 25%, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0.3) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(355, 355, 255, 0.3) 0%, rgba(355, 355, 255, 0.6) 25%, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0.3) 100%);
+	background: -o-moz-linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 25%, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0.3) 100%);
+	border-radius: 30px 30px 30px 30px;
 }
 
 .logoRibbon{
-	height: 70px;
-	width: 100%;
-	background-color: pink;
+	height: auto;
+	max-width: 100%;
+	background-color: #fca4fc;
 	padding-top: 5px;
+	border-radius: 30px 30px 0 0;
 	}
 	
 #headLogo{
-		height: 60px;
-		width: 65px;
-		display: block;
-		margin: auto;
+	width: 15%;
+	display: block;
+	margin: auto;
 	}
 	
-
 .message{
-		margin: 5px 5px 5px 5px;
+		margin: auto;
 		padding: 0 30px 0 30px;
+		height: auto;
 	}
 	
-
 .footer{
-		font-size: 12px;
-		color: grey;
-		text-decoration: none;
+		font-size: 0.8vw;
 		text-align: center;
-		background-color: pink;
+		background-color: #a4f6fc;
 		padding: 2px 2px 2px 2px;
+		border-radius: 0 0 15px 15px;
 
-	}
-
+		}
+		
 .socialIcons{
 		height: 30px;
 		padding-left: 40%;
 	}
 	
 #social{
-		height: 25px;
-		width: 25px;
-		float: left;
-		padding: 5px;
-		display: block;
+	width: 5%;
+	float: left;
+	padding: 6px;
+	display: block;
+	margin: auto;
+	
 	}
 	
-#pwButton{
-		background-color: #4CAF50;
-		color: black;
-		border: none;
-		display: inline-block;
-		padding: 15px 32px;
-		text-align: center;
-	}
+.mailbody(
+	display: inline-block;
+	height: auto;
+
+}
+	
 	
 </STYLE>
 
@@ -83,52 +86,61 @@ body{
 	<div class="emailContainer">
 	
 		<div class="LogoRibbon">
-			<img src="assets/logoPG.png" id="headLogo"></img>
+			<a href="https://www.powergummies.com" target="_blank"><img src="assets/logoPG.png" id="headLogo"></a>
 			
 		</div>
-		
-		<div class="message">
-			
-			<h3> Welcome #Customer, </h3>
-			<br>
-			<br>
-			<p>
-			Your account has been created, Please <a href="https://www.powergummies.com/customer/account/login/" target="_blank"><b> click here </b></a> to login to your account.
-			<br> <br>
-			<b>
-			Email Addres: customer@mail.com <br><br>
-			Name: FirstName LastName <br><br>
-			Password: XXXXXXXXXXXX </b>(as you have given at the time of registration).
-			<br> <br> <br>
-			Your email ID verification OTP code is: <b> 000000 </b>
-			<br> <br>
-			Use your login credentials given above to access services including reviewing past orders, printing invoice and editing your account information. The User ID cannot be changed and hence we recommend that you store this email for your future reference.
-			<br>
-			<br>
-			In case of any further assistance, please mail us at <b> <a href="mailto:hello@powergummies.com">hello@powergummies.com</a></b><br><br>
-			Or connect with our Customer Support at <b><a href="tel:919999147733">+919999147733</a></b>
-			<br><br><br>
-			<b>
-			Thanks,
-			<br><br>
-			Power Gummies
-			</b>
-			</p>
-		</div>
-		
+				
+	<div class="mailBody">	
+				
+				<div class="message" style="font-size:1.5vw;">
+				
+					<h3> Welcome #Customer, </h3>
+					<br>
+					<br>
+					<p>
+					Your account has been created, Please <a href="https://www.powergummies.com/customer/account/login/" target="_blank"><b> click here </b></a> to login to your account.
+					<br> <br>
+					<b>
+					Email Addres: customer@mail.com <br><br>
+					Name: FirstName LastName <br><br>
+					Password: XXXXXXXXXXXX </b>(as you have given at the time of registration).
+					<br> <br> <br>
+					Your email ID verification OTP code is: <b> 000000 </b>
+					<br> <br>
+					Use your login credentials given above to access services including reviewing past orders, printing invoice and editing your account information. The User ID cannot be changed and hence we recommend that you store this email for your future reference.
+					<br>
+					<br>
+					In case of any further assistance, please mail us at <b> <a href="mailto:hello@powergummies.com">hello@powergummies.com</a></b><br><br>
+					Or connect with our Customer Support at <b><a href="tel:919999147733">+919999147733</a></b>
+					<br><br><br>
+					<b>
+					Thanks,
+					<br><br>
+					Power Gummies
+					</b>
+					</p>
+				</div>
+				
+	</div>
 		
 		<div class="footer">
-			<a href="https://www.powergummies.com" target="_blank"> Power Gummies </a>
+			<a href="https://www.powergummies.com" style="text-decoration:none; color: black; font-size: 1vw;"><b> POWER GUMMIES </b></a>
+			<br>
+			M-31, Basement, M-Block Market, Greater Kailash-II,
+			<br>New Delhi-110048
+			<br> <a href="https://www.powergummies.com" style="text-decoration:none; color: black;">www.powergummies.com </a><br>
+			<a href="tel:+919999147733" style="text-decoration:none; color: black;">+91-9999147733</a> | <a href="mailto:hello@powergummies.com" style="text-decoration:none; color: black;">hello@powergummies.com</a>
 			<div class="socialIcons">
 				<a href="https://instagram.com/power_gummies" target="_blank"> <img id="social" src="assets/insta.png"> </a>
 				<a href="https://facebook.com/powergummies" target="_blank"> <img id="social" src="assets/fb.png"> </a>
 				<a href="https://twitter.com/powergummies" target="_blank"> <img id="social" src="assets/twitter.png"> </a>
 				<a href="https://snapchat.com/add/power_gummies" target="_blank"> <img id="social" src="assets/snapchat.png"> </a>
 			</div>
-			<p>
+			<p style="color: grey;">
 				This message was sent to customer@mail.com <br>
-				To Unsubscribe, Please <a href="https://www.powergummies.com"  target="_blank"> click here </a> <br>
-				2020, Aesthetic Nutrition Pvt Ltd. All rights reserved. <a href="https://www.powergummies.com/privacy"  target="_blank"> Legal </a> | <a href="https://www.powergummies.com"  target="_blank"> Privacy </a>
+				To Unsubscribe, Please <a href="https://www.powergummies.com" target="_blank"> click here </a> <br>
+				2020, Aesthetic Nutrition Pvt Ltd. All rights reserved. <a href="https://www.powergummies.com/privacy"> Legal </a> | <a href="https://www.powergummies.com"> Privacy </a>
+			</p>
 			
 		</div>
 	</div>
